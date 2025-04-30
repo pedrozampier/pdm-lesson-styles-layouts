@@ -23,8 +23,8 @@ export default function MainCard({
   return (
     <Card>
       <View style={styles.container}>
-        <Text>{title}</Text>
-        <Text>{participating}/10 Participating</Text>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.participating}>{participating}/10 Participating</Text>
 
         <Image source={{ uri: imgUrl }} width={100} height={100} />
 
@@ -34,18 +34,18 @@ export default function MainCard({
           </View>
 
           <View style={styles.statsRight}>
-            <Text>{name}</Text>
+            <Text style={styles.name}>{name}</Text>
 
             <View style={styles.barContainer}>
               <View style={{ ...styles.bar, width: "80%" }} />
             </View>
 
-            <Text>{hp} / 1500 HP</Text>
+            <Text style={styles.hp}>{hp} / 1500 HP</Text>
           </View>
         </View>
 
         <View style={styles.footer}>
-          <Text>{damageDone} Damage Done</Text>
+          <Text style={styles.damage}>{damageDone} Damage Done</Text>
         </View>
       </View>
     </Card>
@@ -63,6 +63,20 @@ const styles = StyleSheet.create({
   },
   statsRight: {
     flex: 1,
+  },
+  participating: {
+    opacity: 0.5,
+  },
+  title: {
+    fontWeight: "bold",
+  },
+  name: {
+    fontWeight: "bold",
+    paddingBottom: 6,
+  },
+  hp: {
+    opacity: 0.5,
+    paddingTop: 6,
   },
   icon: {
     justifyContent: "center",
@@ -84,5 +98,12 @@ const styles = StyleSheet.create({
   },
   footer: {
     backgroundColor: "rgb(255 166 36)",
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 4,
   },
+  damage: {
+    padding: 8,
+  }
 });
