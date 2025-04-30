@@ -129,7 +129,6 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   footer: {
-    backgroundColor: "rgb(255 166 36)",
     width: "100%",
     justifyContent: "center",
     alignItems: "center",

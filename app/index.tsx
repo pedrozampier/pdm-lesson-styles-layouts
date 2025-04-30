@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StatusBar } from "react-native";
+import { View, Text, TouchableOpacity, StatusBar, ScrollView } from "react-native";
 import React from "react";
 import { Stack } from "expo-router";
 
@@ -23,10 +23,16 @@ export default function index() {
 
       <Title>MEMBERS</Title>
 
+      <Card>
+        <Text>INVITE A MEMBER</Text>
+      </Card>
+       
+
+    <ScrollView>
       <PartyMemberCard
         name="Sophiala"
         username="@bestieee"
-        imgUrl="https://example.com/avatar.jpg"
+        imgUrl="https://e7.pngegg.com/pngimages/358/619/png-clipart-legend-of-zelda-link-pixelated-illustration-the-legend-of-zelda-breath-of-the-wild-link-pixel-art-video-game-excited-person-gif-video-game-fictional-character-thumbnail.png"
         level={12}
         role="Leader"
         hpPercentage={0.8}
@@ -36,12 +42,13 @@ export default function index() {
       <PartyMemberCard
         name="Sophiala"
         username="@bestieee"
-        imgUrl="https://example.com/avatar.jpg"
+        imgUrl="https://e7.pngegg.com/pngimages/8/893/png-clipart-the-legend-of-zelda-pixel-the-legend-of-zelda-breath-of-the-wild-link-pixel-art-pixel-miscellaneous-video-game.png"
         level={12}
         role="Leader"
         hpPercentage={0.8}
         mpPercentage={0.6}
       />
+      </ScrollView>
 
     </ScreenWrapper>
   );
