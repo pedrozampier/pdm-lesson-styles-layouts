@@ -28,26 +28,28 @@ export default function index() {
       </Card>
        
 
-    <ScrollView>
-      <PartyMemberCard
-        name="Sophiala"
-        username="@bestieee"
-        imgUrl="https://e7.pngegg.com/pngimages/358/619/png-clipart-legend-of-zelda-link-pixelated-illustration-the-legend-of-zelda-breath-of-the-wild-link-pixel-art-video-game-excited-person-gif-video-game-fictional-character-thumbnail.png"
-        level={12}
-        role="Leader"
-        hpPercentage={0.8}
-        mpPercentage={0.6}
-      />
+    <ScrollView >
+        <View style={{gap:16}}>
+          <PartyMemberCard
+            name="Sophiala"
+            username="@bestieee"
+            imgUrl="https://e7.pngegg.com/pngimages/358/619/png-clipart-legend-of-zelda-link-pixelated-illustration-the-legend-of-zelda-breath-of-the-wild-link-pixel-art-video-game-excited-person-gif-video-game-fictional-character-thumbnail.png"
+            level={12}
+            role="Leader"
+            hpPercentage={0.8}
+            mpPercentage={0.6}
+          />
 
-      <PartyMemberCard
-        name="Aidowu"
-        username="@getthatbread3"
-        imgUrl="https://e7.pngegg.com/pngimages/419/395/png-clipart-nyan-cat-youtube-cat-animals-text.png"
-        level={11}
-        role="Leader"
-        hpPercentage={0.9}
-        mpPercentage={0.7}
-      />
+          <PartyMemberCard
+            name="Aidowu"
+            username="@getthatbread3"
+            imgUrl="https://e7.pngegg.com/pngimages/419/395/png-clipart-nyan-cat-youtube-cat-animals-text.png"
+            level={11}
+            role="Leader"
+            hpPercentage={0.9}
+            mpPercentage={0.7}
+          />
+        </View>
       </ScrollView>
 
     </ScreenWrapper>
