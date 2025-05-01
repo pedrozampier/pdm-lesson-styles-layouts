@@ -1,8 +1,6 @@
 import { View, Text, TouchableOpacity, StatusBar, ScrollView } from "react-native";
 import React from "react";
-import { Stack } from "expo-router";
 
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import ScreenWrapper from "@/components/ScreenWrapper";
 import Card from "@/components/Card";
 import Title from "@/components/Title";
@@ -24,7 +22,9 @@ export default function index() {
       <Title>MEMBERS</Title>
 
       <Card>
-        <Text>INVITE A MEMBER</Text>
+        <View style={{ alignItems: "center", justifyContent: "center" }}>
+          <Text>INVITE A MEMBER</Text>
+        </View>
       </Card>
        
 
@@ -40,13 +40,13 @@ export default function index() {
       />
 
       <PartyMemberCard
-        name="Sophiala"
-        username="@bestieee"
-        imgUrl="https://e7.pngegg.com/pngimages/8/893/png-clipart-the-legend-of-zelda-pixel-the-legend-of-zelda-breath-of-the-wild-link-pixel-art-pixel-miscellaneous-video-game.png"
-        level={12}
+        name="Aidowu"
+        username="@getthatbread3"
+        imgUrl="https://e7.pngegg.com/pngimages/419/395/png-clipart-nyan-cat-youtube-cat-animals-text.png"
+        level={11}
         role="Leader"
-        hpPercentage={0.8}
-        mpPercentage={0.6}
+        hpPercentage={0.9}
+        mpPercentage={0.7}
       />
       </ScrollView>
 

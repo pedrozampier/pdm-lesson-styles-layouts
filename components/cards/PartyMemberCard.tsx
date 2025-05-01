@@ -8,8 +8,8 @@ type PartyMemberCardProps = {
   username: string;
   imgUrl: string;
   level: number;
-  hpPercentage: number; // ex: 0.75 (75%)
-  mpPercentage: number; // ex: 0.60 (60%)
+  hpPercentage: number; 
+  mpPercentage: number;
   role: string;
 };
 
@@ -52,7 +52,8 @@ export default function PartyMemberCard({
         </View>
 
         <View style={styles.footer}>
-          <Text style={styles.footerText}>Level {level} • {role}</Text>
+          <Text style={styles.footerText}>Level {level}</Text>
+          <Text style={styles.footerText}>{role}</Text>
         </View>
       </View>
     </Card>
@@ -130,7 +131,8 @@ const styles = StyleSheet.create({
   },
   footer: {
     width: "100%",
-    justifyContent: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
     alignItems: "center",
     borderRadius: 4,
   },
